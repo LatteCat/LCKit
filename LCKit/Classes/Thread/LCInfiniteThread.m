@@ -7,6 +7,7 @@
 //
 
 #import "LCInfiniteThread.h"
+#import "LCKitMacro.h"
 
 @interface LCInfiniteThread ()
 
@@ -17,27 +18,24 @@
 @implementation LCInfiniteThread
 
 - (void)start {
-    self.thread = [[NSThread alloc] initWithBlock:^{
-        // 为子线程创建 Runloop 对象
-        NSRunLoop *curRunLoop = [NSRunLoop currentRunLoop];
-        
-        // 创建 Source1 对象，添加到 runloop 中
-        [curRunLoop addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
-        // 添加 mode
-        [curRunLoop runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    }];
+    // 如果子线程已经存在，那么就停止之前的，再重新创建新的子线程
+    if (self.thread) {
+        [self stop];
+    }
+    self.thread = [[NSThread alloc] initWithTarget:self selector:@selector(initRunLoopAndKeepAlive) object:nil];
     [self.thread start];
 }
 
 - (void)stop {
-    CFRunLoopStop(CFRunLoopGetCurrent());
+    [self performTaskBlock:^(LCInfiniteThread * _Nonnull thread) {
+        CFRunLoopStop(CFRunLoopGetCurrent());
+        self.thread = nil;
+    }];
 }
 
-- (void)performBlock:(LCInfiniteThreadCallbackBlock)block {
-    [self performSelector:@selector(executeInprivateThread:) onThread:self.thread withObject:block waitUntilDone:NO];
-    
-    // 使 runloop 继续睡眠
-    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+- (void)performTaskBlock:(LCInfiniteThreadTaskBlock)block {
+    if (!self.thread) return;
+    [self performSelector:@selector(executeInThread:) onThread:self.thread withObject:block waitUntilDone:YES];
 }
 
 
@@ -46,7 +44,8 @@
 //***********************************************************************************************************************************************************
 
 - (void)dealloc {
-    NSLog(@"%s", __func__);
+    [self stop];
+    NSLog(@"线程对象销毁！");
 }
 
 
@@ -54,8 +53,23 @@
 // MARK:-                                                           Private
 //***********************************************************************************************************************************************************
 
-- (void)executeInprivateThread:(LCInfiniteThreadCallbackBlock)block {
+- (void)executeInThread:(LCInfiniteThreadTaskBlock)block {
     block(self);
 }
 
+/**
+ *  创建线程内部的 RunLoop 并保活
+ */
+- (void)initRunLoopAndKeepAlive {
+    // 创建 Source1 对象，添加到 runloop 中
+    CFRunLoopSourceContext context = {0};
+    CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &context);
+    CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    CFRelease(source);
+    
+    // 将 mode 添加到 RunLoop 中
+    CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
+}
+
 @end
+ 

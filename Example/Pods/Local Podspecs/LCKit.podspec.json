@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "LCKit/Classes/**/*"
+  "source_files": "LCKit/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h"
 }

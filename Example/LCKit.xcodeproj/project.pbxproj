@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1234957D2417A11100442087 /* LCThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1234957B2417A11100442087 /* LCThreadExampleViewController.m */; };
+		1234957E2417A11100442087 /* LCThreadExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1234957C2417A11100442087 /* LCThreadExampleViewController.xib */; };
+		123495812417A32D00442087 /* LCMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123495802417A32D00442087 /* LCMainTableViewController.m */; };
 		309044C136FD9DFF5ADDD4B9 /* Pods_LCKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9F7BB89A1AF054A0B29F3 /* Pods_LCKit_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -14,7 +17,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LCAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LCViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -37,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1234957A2417A11100442087 /* LCThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCThreadExampleViewController.h; sourceTree = "<group>"; };
+		1234957B2417A11100442087 /* LCThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCThreadExampleViewController.m; sourceTree = "<group>"; };
+		1234957C2417A11100442087 /* LCThreadExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCThreadExampleViewController.xib; sourceTree = "<group>"; };
+		1234957F2417A32D00442087 /* LCMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMainTableViewController.h; sourceTree = "<group>"; };
+		123495802417A32D00442087 /* LCMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMainTableViewController.m; sourceTree = "<group>"; };
 		3CC5DA3B4A00FBDDA37015E5 /* Pods_LCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4305E3AC6DDCEB6011E66300 /* Pods-LCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LCKit_Tests/Pods-LCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55C9F7BB89A1AF054A0B29F3 /* Pods_LCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +58,6 @@
 		6003F59B195388D20070C39A /* LCKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LCKit-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LCKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123495792417A0B900442087 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				1234957A2417A11100442087 /* LCThreadExampleViewController.h */,
+				1234957B2417A11100442087 /* LCThreadExampleViewController.m */,
+				1234957C2417A11100442087 /* LCThreadExampleViewController.xib */,
+			);
+			name = Thread;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,14 +147,15 @@
 		6003F593195388D20070C39A /* Example for LCKit */ = {
 			isa = PBXGroup;
 			children = (
+				123495792417A0B900442087 /* Thread */,
 				6003F59C195388D20070C39A /* LCAppDelegate.h */,
 				6003F59D195388D20070C39A /* LCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LCViewController.h */,
-				6003F5A6195388D20070C39A /* LCViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				1234957F2417A32D00442087 /* LCMainTableViewController.h */,
+				123495802417A32D00442087 /* LCMainTableViewController.m */,
 			);
 			name = "Example for LCKit";
 			path = LCKit;
@@ -281,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				1234957E2417A11100442087 /* LCThreadExampleViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -367,8 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1234957D2417A11100442087 /* LCThreadExampleViewController.m in Sources */,
+				123495812417A32D00442087 /* LCMainTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LCAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +497,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -501,6 +520,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCKit/LCKit-Prefix.pch";
 				INFOPLIST_FILE = "LCKit/LCKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dearlattecat.lckitdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCKit/LCKit-Prefix.pch";
 				INFOPLIST_FILE = "LCKit/LCKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dearlattecat.lckitdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LCKit_Example' do
+  pod 'LCKit', :path => '../'
+
+  target 'LCKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

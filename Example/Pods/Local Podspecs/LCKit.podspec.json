@@ -1,0 +1,22 @@
+{
+  "name": "LCKit",
+  "version": "0.1.0",
+  "summary": "在使用 Objective-C 进行 iOS 项目开发时使用到的工具类",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lattecat/LCKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lattecat": "dearlattecat@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lattecat/LCKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LCKit/Classes/**/*"
+}

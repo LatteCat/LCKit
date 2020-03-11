@@ -10,6 +10,8 @@
 		1234957D2417A11100442087 /* LCThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1234957B2417A11100442087 /* LCThreadExampleViewController.m */; };
 		1234957E2417A11100442087 /* LCThreadExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1234957C2417A11100442087 /* LCThreadExampleViewController.xib */; };
 		123495812417A32D00442087 /* LCMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123495802417A32D00442087 /* LCMainTableViewController.m */; };
+		123C893024195AB800E2932B /* LCWeakProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123C892F24195AB800E2932B /* LCWeakProxyViewController.m */; };
+		123C893224195B0400E2932B /* LCWeakProxyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C893124195B0400E2932B /* LCWeakProxyViewController.xib */; };
 		309044C136FD9DFF5ADDD4B9 /* Pods_LCKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C9F7BB89A1AF054A0B29F3 /* Pods_LCKit_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -44,6 +46,9 @@
 		1234957C2417A11100442087 /* LCThreadExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCThreadExampleViewController.xib; sourceTree = "<group>"; };
 		1234957F2417A32D00442087 /* LCMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMainTableViewController.h; sourceTree = "<group>"; };
 		123495802417A32D00442087 /* LCMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMainTableViewController.m; sourceTree = "<group>"; };
+		123C892E24195AB800E2932B /* LCWeakProxyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCWeakProxyViewController.h; sourceTree = "<group>"; };
+		123C892F24195AB800E2932B /* LCWeakProxyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCWeakProxyViewController.m; sourceTree = "<group>"; };
+		123C893124195B0400E2932B /* LCWeakProxyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCWeakProxyViewController.xib; sourceTree = "<group>"; };
 		3CC5DA3B4A00FBDDA37015E5 /* Pods_LCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4305E3AC6DDCEB6011E66300 /* Pods-LCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LCKit_Tests/Pods-LCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55C9F7BB89A1AF054A0B29F3 /* Pods_LCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +115,16 @@
 			name = Thread;
 			sourceTree = "<group>";
 		};
+		123C892D24195A6800E2932B /* WeakProxy */ = {
+			isa = PBXGroup;
+			children = (
+				123C892E24195AB800E2932B /* LCWeakProxyViewController.h */,
+				123C892F24195AB800E2932B /* LCWeakProxyViewController.m */,
+				123C893124195B0400E2932B /* LCWeakProxyViewController.xib */,
+			);
+			name = WeakProxy;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +162,7 @@
 		6003F593195388D20070C39A /* Example for LCKit */ = {
 			isa = PBXGroup;
 			children = (
+				123C892D24195A6800E2932B /* WeakProxy */,
 				123495792417A0B900442087 /* Thread */,
 				6003F59C195388D20070C39A /* LCAppDelegate.h */,
 				6003F59D195388D20070C39A /* LCAppDelegate.m */,
@@ -300,6 +316,7 @@
 				1234957E2417A11100442087 /* LCThreadExampleViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				123C893224195B0400E2932B /* LCWeakProxyViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123C893024195AB800E2932B /* LCWeakProxyViewController.m in Sources */,
 				1234957D2417A11100442087 /* LCThreadExampleViewController.m in Sources */,
 				123495812417A32D00442087 /* LCMainTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LCAppDelegate.m in Sources */,

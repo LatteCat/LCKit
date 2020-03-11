@@ -12,6 +12,7 @@
 
 #import "LCKit.h"
 #import "LCKitMacro.h"
+#import "LCWeakProxy.h"
 #import "LCInfiniteThread.h"
 #import "UIView+Frame.h"
 

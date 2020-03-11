@@ -44,4 +44,6 @@
     [self.thread stop];
 }
 
+//- (id)forwardingTargetForSelector:(SEL)aSelector
+
 @end

@@ -11,6 +11,7 @@
 #import "LCKitMacro.h"
 #import "LCInfiniteThread.h"
 #import "UIView+Frame.h"
+#import "LCWeakProxy.h"
 
 
 #endif /* LCKit_h */

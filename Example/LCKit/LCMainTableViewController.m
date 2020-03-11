@@ -8,6 +8,7 @@
 
 #import "LCMainTableViewController.h"
 #import "LCThreadExampleViewController.h"
+#import "LCWeakProxyViewController.h"
 
 #define kLCExmapleTitleKey          @"title"
 #define kLCExmapleVCCalssKey        @"VC"
@@ -28,6 +29,7 @@
     // setup datasources
     self.examples = @[
         @{@"title": @"Thread", @"VC": LCThreadExampleViewController.class},
+        @{@"title": @"WeakProxy", @"VC": LCWeakProxyViewController.class},
     ];
     
     // setup tableview

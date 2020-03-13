@@ -12,6 +12,6 @@
 #import "LCInfiniteThread.h"
 #import "UIView+Frame.h"
 #import "LCWeakProxy.h"
-
+#import "LCThreadSafeArray.h"
 
 #endif /* LCKit_h */

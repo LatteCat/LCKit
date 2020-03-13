@@ -14,6 +14,7 @@
 #import "LCKitMacro.h"
 #import "LCWeakProxy.h"
 #import "LCInfiniteThread.h"
+#import "LCThreadSafeArray.h"
 #import "UIView+Frame.h"
 
 FOUNDATION_EXPORT double LCKitVersionNumber;

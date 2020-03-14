@@ -13,5 +13,7 @@
 #import "UIView+Frame.h"
 #import "LCWeakProxy.h"
 #import "LCThreadSafeArray.h"
+#import "LCMultiDelegate.h"
+#import "NSInvocation+LCKit.h"
 
 #endif /* LCKit_h */

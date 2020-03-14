@@ -9,6 +9,7 @@
 #import "LCMainTableViewController.h"
 #import "LCThreadExampleViewController.h"
 #import "LCWeakProxyViewController.h"
+#import "LCMultiDelegateViewController.h"
 
 #define kLCExmapleTitleKey          @"title"
 #define kLCExmapleVCCalssKey        @"VC"
@@ -30,6 +31,7 @@
     self.examples = @[
         @{@"title": @"Thread", @"VC": LCThreadExampleViewController.class},
         @{@"title": @"WeakProxy", @"VC": LCWeakProxyViewController.class},
+        @{@"title": @"MultiDelegate", @"VC": LCMultiDelegateViewController.class},
     ];
     
     // setup tableview

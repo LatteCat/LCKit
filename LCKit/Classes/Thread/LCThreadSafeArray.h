@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<ObjectType> *)objectsAtIndexes:(NSIndexSet *)indexes;
 
 - (NSUInteger)indexOfObject:(ObjectType)anObject;
+- (BOOL)containsObject:(ObjectType)anObject;
 
 /**
  *  向数组的最末端添加一个成员
@@ -37,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)insertObject:(ObjectType)object atIndex:(NSUInteger)index;
 
 - (void)removeObjectAtIndex:(NSUInteger)index;
+- (void)removeObject:(ObjectType)anObject;
+- (void)removeAllObjects;
 
 @end
 

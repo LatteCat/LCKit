@@ -60,6 +60,9 @@ return RETURN; \
 
 @end
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
+
 @implementation LCThreadSafeArray
 
 - (instancetype)initWithArray:(NSArray *)array concurrentRead:(BOOL)concurrentRead {
@@ -86,6 +89,10 @@ return RETURN; \
 - (instancetype)init {
     self = [self initWithArray:@[] concurrentRead:YES];
     return self;
+}
+
+- (void)dealloc {
+    pthread_rwlock_destroy(self.rwlock);
 }
 
 
@@ -133,8 +140,9 @@ return RETURN; \
 //***********************************************************************************************************************************************************
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    Method m =  class_getInstanceMethod(self.containerArray.class, aSelector);
-    return [NSMethodSignature signatureWithObjCTypes:method_getTypeEncoding(m)];
+//    Method m =  class_getInstanceMethod(self.containerArray.class, aSelector);
+//    return [NSMethodSignature signatureWithObjCTypes:method_getTypeEncoding(m)];
+    return [self.containerArray methodSignatureForSelector:aSelector];
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
@@ -164,3 +172,4 @@ return RETURN; \
 
 
 @end
+#pragma clang diagnostic pop

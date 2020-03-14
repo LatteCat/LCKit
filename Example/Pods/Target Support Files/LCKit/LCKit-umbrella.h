@@ -10,9 +10,11 @@
 #endif
 #endif
 
+#import "LCMultiDelegate.h"
 #import "LCKit.h"
 #import "LCKitMacro.h"
 #import "LCWeakProxy.h"
+#import "NSInvocation+LCKit.h"
 #import "LCInfiniteThread.h"
 #import "LCThreadSafeArray.h"
 #import "UIView+Frame.h"

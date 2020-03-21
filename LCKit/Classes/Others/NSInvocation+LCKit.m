@@ -46,7 +46,16 @@ TYPE value; \
         } else if (!strcmp(type, @encode(char *))) {
             LC_INVOCATION_COPY_ARGUMENTS(char *)
         } else if (!strcmp(type, @encode(NSObject *))) {
-            LC_INVOCATION_COPY_ARGUMENTS(NSObject *)
+            // https://stackoverflow.com/questions/22018272/nsinvocation-returns-value-but-makes-app-crash-with-exc-bad-access
+            // 在 ARC 下，`getArgument:`仅仅是将参数按照字节来复制到传入的实参中，它不会去处理传入的参数的内存管理问题
+            // 默认 id value 是 __strong 类型，ARC 会认为该指针指向的对象默认已经进行了 retain 操作，在 value 到达作用域的结束时会调用 release，这样就相当于对象会提前释放了，导致了僵尸对象的出现
+            // 设置为 __weak 或 __unsafe_unretained 之后，就能解决问题
+            // 同理 getReturnValue: 也会有这个问题
+            // LC_INVOCATION_COPY_ARGUMENTS(id) // 不能直接使用此宏定义
+             NSObject * __unsafe_unretained tempValue;
+            [self getArgument:&tempValue atIndex:idx];
+//            NSObject *value = tempValue;
+            [anInvocation setArgument:&tempValue atIndex:idx];
         } else if (!strcmp(type, @encode(Class))) {
             LC_INVOCATION_COPY_ARGUMENTS(Class)
         } else if (!strcmp(type, @encode(SEL))) {
@@ -60,7 +69,9 @@ TYPE value; \
             [[NSException exceptionWithName:NSInvalidArgumentException reason:reason userInfo:nil] raise];
         }
     }
-    [anInvocation retainArguments];
+    if (!anInvocation.argumentsRetained) {
+        [anInvocation retainArguments];
+    }
     
     return anInvocation;
 }

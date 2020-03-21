@@ -156,18 +156,15 @@
         LCMultiDelegateNode *node = self.nodes[i];
         if ([node.delegate respondsToSelector:anInvocation.selector]) {
             id target = node.delegate;
-//            NSLog(@"*********SELECTOR:%s, TARGET:%@", anInvocation.selector, target);
+            // !!!!:此处需要用到 copiedInvocation 方法
+            // 原本 NSInvocation 对象是可以多次调用 invokeWithTarget: 方法的，但是因为使用了 dispatch_async(queue, block) 方法，可能会造成多线程的环境下调用，
+            // invokeWithTarget: 的原理是先设置 target，然后再调用 invoke，这样就导致可能会之前的 taget 被后面的 target 覆盖了，导致前面的 target 没有调用，后面的 target 调用了多次
+            NSInvocation *newInvocation = [anInvocation copiedInvocation];
             dispatch_async(node.queue, ^{
-//                NSLog(@"*********SELECTOR:%s, TARGET:%@", anInvocation.selector, target);
-                [anInvocation invokeWithTarget:target];
+                [newInvocation invokeWithTarget:target];
             });
         }
     }
-//    [self.nodes enumerateObjectsUsingBlock:^(LCMultiDelegateNode * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        dispatch_async(obj.queue, ^{
-//            [anInvocation invokeWithTarget:obj.delegate];
-//        });
-//    }];
     LC_MULTIDELEGATE_UNLOCK
 }
 

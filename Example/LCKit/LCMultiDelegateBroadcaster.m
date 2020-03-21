@@ -8,6 +8,7 @@
 
 #import "LCMultiDelegateBroadcaster.h"
 
+
 @class LCMultiDelegate1;
 
 @interface LCMultiDelegateBroadcaster ()
@@ -40,8 +41,47 @@
 }
 
 - (void)broadcast {
+    // 以下都经过了测试
     [self.delegate testChar:'1' unsignedChar:'A'];
+
     [self.delegate testInt:123 unsignedInt:456];
+
+    [self.delegate testShort:-12 unsignedShort:12];
+
+    [self.delegate testLong:-234246434 unsignedLong:2325523456];
+
+    [self.delegate testFloat:1.23];
+
+    [self.delegate testDouble:-123.3445555];
+
+    [self.delegate testBool:true];
+    [self.delegate testBool:false];
+    [self.delegate testBOOL:YES];
+    [self.delegate testBOOL:NO];
+
+    [self.delegate testChar_:"12345"];
+
+    NSObject *obj = [[NSObject alloc] init];
+    NSLog(@"NSObject: %@", obj);
+    [self.delegate testNSObject:obj];
+
+
+    [self.delegate testClass:NSObject.class];
+
+    [self.delegate testSEL:sel_registerName("HelloWorld")];
+
+    int a = 10;
+    int *b = &a;
+    [self.delegate testInt_:b];
+
+    int c[] = {1, 2, 3, 4, 5, 6};
+    [self.delegate testInt__:c];
+    
+    // 结构体不支持，因为它的大小不能确定；结构体指针通过测试也不支持，原因未知
+    struct TestStruct t = {1, 2.3};
+    struct TestStruct *t1 = &t;
+    NSLog(@"t1:%p", t1);
+    [self.delegate testStruct_:t1];
 }
 
 @end
@@ -125,6 +165,13 @@
 
 - (void)testFloat_:(float *)float_Value {
     NSLog(@"%s, %@, %p", __func__, self.class, float_Value);
+}
+
+- (void)testStruct_:(struct TestStruct *)struct_value {
+//    struct TestStruct *t = (struct TestStruct *)struct_value;
+//    NSLog(@"%d, %f", t->age, t->weight);
+    
+    NSLog(@"%d, %f", struct_value->age, struct_value->weight);
 }
 
 @end

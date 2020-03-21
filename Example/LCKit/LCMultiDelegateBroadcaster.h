@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <LCKit/LCMultiDelegate.h>
 
+struct TestStruct {
+    int age;
+    double weight;
+};
+
 @protocol LCMultiDelegateBroadcaster <NSObject>
 
 - (void)testChar:(char)charValue unsignedChar:(unsigned char)unsignedCharValue;
@@ -44,6 +49,8 @@
 - (void)testInt_:(int *)int_Value;
 
 - (void)testFloat_:(float *)float_Value;
+
+- (void)testStruct_:(struct TestStruct *)struct_value;
 
 @end
 

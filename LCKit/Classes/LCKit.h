@@ -15,5 +15,6 @@
 #import "LCThreadSafeArray.h"
 #import "LCMultiDelegate.h"
 #import "NSInvocation+LCKit.h"
+#import "LCImageFactory.h"
 
 #endif /* LCKit_h */

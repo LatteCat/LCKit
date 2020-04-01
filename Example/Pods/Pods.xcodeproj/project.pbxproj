@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		098BE1F15B86DF0684AD62A73965D088 /* LCMultiDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 705C27D28CF2BFE62D8073D2C5EBB287 /* LCMultiDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10AD2595BB284A97B5E993D71EC9E8F1 /* LCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0417F24D361E25CF5950C77701C4DE /* LCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2284A799BC3E5FF422C00AA03C515724 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3F59D7BDD43ADCE03C918B4F736996CB /* LCInfiniteThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 236E6A167BEBB525847BD5C3592C4F32 /* LCInfiniteThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05763CA9A03E2ADF696DA586676257B4 /* NSInvocation+LCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD37702D1B45142F95991896EB7E95 /* NSInvocation+LCKit.m */; };
+		0BDDD5DB6670DCA25693B61A37E35309 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D78CD790DF4400A5F494BDC359730886 /* UIView+Frame.m */; };
+		109173308EC0D1F55E812339B7C71FE6 /* LCThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2FDF705B35372C4EA0DE9BC0138312 /* LCThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F747494D579A27816E482B9A12BF5C /* LCInfiniteThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 73735A446011FFB35BB7040054961D55 /* LCInfiniteThread.m */; };
+		26F58F148741F0265CAD8F2D4A9CDE5B /* LCWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E51459BEA0A632171BF1693295C94E4 /* LCWeakProxy.m */; };
+		2E6F7D7E3A300B324B685E3B3020018A /* LCImageFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 92AC9082445307DE98C2DC2E22F410E6 /* LCImageFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32F52F78A6B7359A116AE649150E9E14 /* LCInfiniteThread.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDA1B024F61A6B5896E68AA063BC4DA /* LCInfiniteThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F67A667714C4190418F5F1BBBD704F6 /* NSInvocation+LCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2110642CB10727E1F88EC6943D0C90 /* NSInvocation+LCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4573254EF4F05DC15D715FDB8AA0B4D3 /* LCWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 348085CB02EEA3BACBE2AD2CB90F5B2A /* LCWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B6C2242F9F4FF58951AA228A650687D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4E8237A05BBE6CC15D0B98749E99805A /* NSInvocation+LCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B0587D4BE6EBF67487535CE68606A8DF /* NSInvocation+LCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BB4DA3137DFAA3D5AAA1F9C3277B17F /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA37B4593F36A592756DA54FDEAF3E9 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		613BA2B7A9CF124C34686E4266002745 /* LCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4CD7E062481277A05D504021944645 /* LCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61A5EA193DFAD1992A3EA343BCA66849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6C404FFBBC9ABEE141D122DBAFAC2F90 /* LCInfiniteThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F454680590DC5D21C0BCA50D0D687D5 /* LCInfiniteThread.m */; };
-		8063681E6AE3F461171E0A08006A9DD4 /* LCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB8B650F882037C69A8800A17EC8F1 /* LCKit-dummy.m */; };
-		83C3C31EFA5EC748D28E58B68A34B711 /* NSInvocation+LCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 821C006AAC6748C0AB774B93E5A85296 /* NSInvocation+LCKit.m */; };
-		9991FDE24B6B647F0CD6E408AEF7A922 /* LCKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CE7739AFCAF74A1A9C9574916FA74F /* LCKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F3D0387EB311C51A56E0B3E1542583 /* LCMultiDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E87B9B4AF836055E021D397F74AF7439 /* LCMultiDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72E7ACFE313524310B6C331A6DD6DA92 /* LCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAE069EB4AD026A2A5CFF4704E8648C /* LCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AE37C4B27B6A165B401C5A2F3B54D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8B3C5788540A6B90BCCF9F0E920B8CCC /* LCKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF96EF7D3ADCDC2F6F2C0B0381ABD3E /* LCKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A2FE577F67E92168B6EC76433BB0483 /* Pods-LCKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C55BDC6E203918366C7A0DE81B9279A /* Pods-LCKit_Tests-dummy.m */; };
-		9CA3B09F5E83751AD6D1F610117BEA7F /* LCWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F50B564AEA338026A1F525D316EC61D /* LCWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3249BCFA7250632319C002486481D7A /* LCThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E66E8CF9B7D1651F27C57E652B751A /* LCThreadSafeArray.m */; };
+		9F7C2851BC9EB510878D3F2D71C3013F /* LCImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F22AF668FF5604136E0652E11E6F22DE /* LCImageFactory.m */; };
 		A9F7B282D960944CD838E05A92D2C5ED /* Pods-LCKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60549645A3100847EF6272997B38D7 /* Pods-LCKit_Example-dummy.m */; };
-		BA90F10D8251C1A7226C7B44ABF5745A /* LCWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC840D6F5617E725C902D0E60A49E54 /* LCWeakProxy.m */; };
-		C29A417D28CBEC51BE85E08225444292 /* LCMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 952AE3CF8E295CBB7A967488CDF6683D /* LCMultiDelegate.m */; };
-		C5101AE83297D27919C9661E3B0E8203 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BC3A302A3321599BCE0BD8CF51764D /* UIView+Frame.m */; };
+		B1D8E01DE19E5C46C107C7D3E4204926 /* LCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0833F92EEBC4E7BB605A9AB7607F43 /* LCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B93C63A9F7E4B00B72560AACD82287A8 /* LCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DFA54C451092CD733989DC06BA3C50 /* LCKit-dummy.m */; };
+		B9BB0BEC2EE653221D6D45EE6073039E /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = B675AF148E22006B9270EDD6BF66816F /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBDB6C248A19930261A5D2129EABCCE0 /* LCMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F6E16D709165564BD93418A604783 /* LCMultiDelegate.m */; };
 		CEC210F4E66FC1F9D8327015D657538B /* Pods-LCKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABF4F4F34FF9E1BE0BB3274B2FE242 /* Pods-LCKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB26AE789BE62CE7BE64B2211AC4B982 /* LCThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = AD34C306A763119B552D6EF293BE0AB8 /* LCThreadSafeArray.m */; };
 		EDC1AF95412A6F2B46C8664C4B02733D /* Pods-LCKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B512A763BC4C63BE7879B7927C86D3F /* Pods-LCKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7791823AA0EA8DEB3563C8BF3870190 /* LCThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AC6094B05A311BB7A46241B45F67A6 /* LCThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,51 +52,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01AC6094B05A311BB7A46241B45F67A6 /* LCThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCThreadSafeArray.h; sourceTree = "<group>"; };
-		1485736A2AB67C713A80CEFF52A042BF /* LCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCKit-prefix.pch"; sourceTree = "<group>"; };
+		0FCD37702D1B45142F95991896EB7E95 /* NSInvocation+LCKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LCKit.m"; sourceTree = "<group>"; };
 		1DABF4F4F34FF9E1BE0BB3274B2FE242 /* Pods-LCKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		236E6A167BEBB525847BD5C3592C4F32 /* LCInfiniteThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCInfiniteThread.h; sourceTree = "<group>"; };
+		23D7CE9559D13526776344DC5906F690 /* LCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCKit.release.xcconfig; sourceTree = "<group>"; };
 		252507E0B6D28DD5993551C618486CDC /* Pods-LCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2F454680590DC5D21C0BCA50D0D687D5 /* LCInfiniteThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCInfiniteThread.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34944619CDF6F0BCF6D286B04CF11B8D /* LCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LCKit-Info.plist"; sourceTree = "<group>"; };
+		348085CB02EEA3BACBE2AD2CB90F5B2A /* LCWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCWeakProxy.h; sourceTree = "<group>"; };
 		3542C94456803ABDCC89B01FA773402E /* Pods-LCKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		38DB8EC5DA38CF29F49D8B36A45397DD /* LCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LCKit.modulemap; sourceTree = "<group>"; };
 		3A300092FFD40B85A38BD910E2A46480 /* Pods-LCKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		3B512A763BC4C63BE7879B7927C86D3F /* Pods-LCKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3BA37B4593F36A592756DA54FDEAF3E9 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3D61379E2AE54CE5D09E32C08B0D2B9C /* Pods-LCKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3EF96EF7D3ADCDC2F6F2C0B0381ABD3E /* LCKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCKitMacro.h; sourceTree = "<group>"; };
 		488F014AD69631A68898F4843804A547 /* Pods-LCKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCKit_Example-Info.plist"; sourceTree = "<group>"; };
-		4AACEBFCD6355BC8E9866784ED9A4D70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4F50B564AEA338026A1F525D316EC61D /* LCWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCWeakProxy.h; sourceTree = "<group>"; };
+		56E99BF9F0C710CD6CDD985814797E7D /* LCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LCKit-Info.plist"; sourceTree = "<group>"; };
 		571C6BB3AC8950A473E023F2D8BB4D0C /* Pods_LCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCKit_Example.framework; path = "Pods-LCKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59A3CD46EC1EAF67F9EBF727FD377345 /* LCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5A3B77B9C5AE2B6B8B16D925829CC3A9 /* Pods-LCKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LCKit_Tests.modulemap"; sourceTree = "<group>"; };
 		5C55BDC6E203918366C7A0DE81B9279A /* Pods-LCKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		638A3C9220A492559201AC4E2809AB5A /* Pods-LCKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		66CE7739AFCAF74A1A9C9574916FA74F /* LCKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCKitMacro.h; sourceTree = "<group>"; };
 		6F60549645A3100847EF6272997B38D7 /* Pods-LCKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCKit_Example-dummy.m"; sourceTree = "<group>"; };
-		705C27D28CF2BFE62D8073D2C5EBB287 /* LCMultiDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCMultiDelegate.h; sourceTree = "<group>"; };
+		73735A446011FFB35BB7040054961D55 /* LCInfiniteThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCInfiniteThread.m; sourceTree = "<group>"; };
 		7C513BF95CB014F373A1277589F51CF3 /* Pods-LCKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LCKit_Example.modulemap"; sourceTree = "<group>"; };
-		821C006AAC6748C0AB774B93E5A85296 /* NSInvocation+LCKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+LCKit.m"; sourceTree = "<group>"; };
 		89CFA154DB394827688F97D86CC0F7E7 /* Pods-LCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8CC840D6F5617E725C902D0E60A49E54 /* LCWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCWeakProxy.m; sourceTree = "<group>"; };
-		952AE3CF8E295CBB7A967488CDF6683D /* LCMultiDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCMultiDelegate.m; sourceTree = "<group>"; };
+		92AC9082445307DE98C2DC2E22F410E6 /* LCImageFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCImageFactory.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1CB8B650F882037C69A8800A17EC8F1 /* LCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCKit-dummy.m"; sourceTree = "<group>"; };
-		AE0417F24D361E25CF5950C77701C4DE /* LCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCKit-umbrella.h"; sourceTree = "<group>"; };
-		AE2A39065212BF6AF68FDEF979877909 /* LCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LCKit.modulemap; sourceTree = "<group>"; };
-		B0587D4BE6EBF67487535CE68606A8DF /* NSInvocation+LCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LCKit.h"; sourceTree = "<group>"; };
-		B9E66E8CF9B7D1651F27C57E652B751A /* LCThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCThreadSafeArray.m; sourceTree = "<group>"; };
+		9E51459BEA0A632171BF1693295C94E4 /* LCWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCWeakProxy.m; sourceTree = "<group>"; };
+		AD0833F92EEBC4E7BB605A9AB7607F43 /* LCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCKit-umbrella.h"; sourceTree = "<group>"; };
+		AD34C306A763119B552D6EF293BE0AB8 /* LCThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCThreadSafeArray.m; sourceTree = "<group>"; };
+		B675AF148E22006B9270EDD6BF66816F /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		BAEF113B6B31CCB85521B7C3D4A3D4C3 /* Pods-LCKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BB80BEFB2A53364007B90EDFA0CE7A5A /* LCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LCKit.framework; path = LCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2110642CB10727E1F88EC6943D0C90 /* NSInvocation+LCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+LCKit.h"; sourceTree = "<group>"; };
+		BE142A3F879A7C7831235920C6CCE18D /* LCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEA60BD56A8585BE9F8D8DE4702667B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BF1ED6299045D8E7425941DC7E15E979 /* Pods-LCKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C2BC3A302A3321599BCE0BD8CF51764D /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		C3EDE1BBFD3C0DBA3CBE1ADC35D013C0 /* LCKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCKit.xcconfig; sourceTree = "<group>"; };
+		C34F81B90E72F6CB91D6710DE0FF6D5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CCDA1B024F61A6B5896E68AA063BC4DA /* LCInfiniteThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCInfiniteThread.h; sourceTree = "<group>"; };
+		CE7F6E16D709165564BD93418A604783 /* LCMultiDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCMultiDelegate.m; sourceTree = "<group>"; };
 		CEC23BC6753F74AA194C230EE9E7F2FF /* Pods-LCKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DC44AC9B2DDFE314BBD8F4150BC565D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D78CD790DF4400A5F494BDC359730886 /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		DF60A27BDE1BC4643A8F1EC5242CAF68 /* Pods_LCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCKit_Tests.framework; path = "Pods-LCKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC4CD7E062481277A05D504021944645 /* LCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCKit.h; path = LCKit/Classes/LCKit.h; sourceTree = "<group>"; };
+		E862A2A562F1F865781AA3AD8DAAC61B /* LCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCKit.debug.xcconfig; sourceTree = "<group>"; };
+		E87B9B4AF836055E021D397F74AF7439 /* LCMultiDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCMultiDelegate.h; sourceTree = "<group>"; };
+		EBAE069EB4AD026A2A5CFF4704E8648C /* LCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCKit.h; path = LCKit/Classes/LCKit.h; sourceTree = "<group>"; };
+		EE2FDF705B35372C4EA0DE9BC0138312 /* LCThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LCThreadSafeArray.h; sourceTree = "<group>"; };
+		F22AF668FF5604136E0652E11E6F22DE /* LCImageFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LCImageFactory.m; sourceTree = "<group>"; };
 		F3F7973DACBF5332BBFC8CC8321661DF /* Pods-LCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F7FAF5F72C70AEEF313A0FF6AC33B9BB /* LCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCKit-prefix.pch"; sourceTree = "<group>"; };
+		F9DFA54C451092CD733989DC06BA3C50 /* LCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +111,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3846B64C8CE2947C1F668A0E7CA73D82 /* Frameworks */ = {
+		1E35ACD87317EDE3AF8C1482FF1BC973 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2284A799BC3E5FF422C00AA03C515724 /* Foundation.framework in Frameworks */,
+				8AE37C4B27B6A165B401C5A2F3B54D2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,25 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0764730736809FC8EE90B3062E72F17F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				59A3CD46EC1EAF67F9EBF727FD377345 /* LCKit.podspec */,
-				4AACEBFCD6355BC8E9866784ED9A4D70 /* LICENSE */,
-				DC44AC9B2DDFE314BBD8F4150BC565D1 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		0E4CC4A3EA34C6BE7DCCF91D0D95C036 /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				66CE7739AFCAF74A1A9C9574916FA74F /* LCKitMacro.h */,
-			);
-			name = Macro;
-			path = LCKit/Classes/Macro;
-			sourceTree = "<group>";
-		};
 		34F8661D17D28DC6087DE0B8D4E73E34 /* Pods-LCKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,18 +149,28 @@
 		35603A427D672721C59619CA0010E02C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F82EE34EEFCDDF6BA2955A050410CE3 /* LCKit */,
+				F0C881BD333C2F82163E894CCB05C61D /* LCKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		42CCA576C600290C17F4863F082EC9D9 /* Thread */ = {
+		45E639B33902BB20755F3B4871CECB98 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				236E6A167BEBB525847BD5C3592C4F32 /* LCInfiniteThread.h */,
-				2F454680590DC5D21C0BCA50D0D687D5 /* LCInfiniteThread.m */,
-				01AC6094B05A311BB7A46241B45F67A6 /* LCThreadSafeArray.h */,
-				B9E66E8CF9B7D1651F27C57E652B751A /* LCThreadSafeArray.m */,
+				BE142A3F879A7C7831235920C6CCE18D /* LCKit.podspec */,
+				C34F81B90E72F6CB91D6710DE0FF6D5D /* LICENSE */,
+				BEA60BD56A8585BE9F8D8DE4702667B8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4A6C19525987E42ADEF674E5418B6749 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA1B024F61A6B5896E68AA063BC4DA /* LCInfiniteThread.h */,
+				73735A446011FFB35BB7040054961D55 /* LCInfiniteThread.m */,
+				EE2FDF705B35372C4EA0DE9BC0138312 /* LCThreadSafeArray.h */,
+				AD34C306A763119B552D6EF293BE0AB8 /* LCThreadSafeArray.m */,
 			);
 			name = Thread;
 			path = LCKit/Classes/Thread;
@@ -190,20 +186,52 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F82EE34EEFCDDF6BA2955A050410CE3 /* LCKit */ = {
+		655F00CF7581962FB570047FC1D2FFC1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC4CD7E062481277A05D504021944645 /* LCKit.h */,
-				F7C8AA117A42C916BC89ABEDD4FE121F /* Delegate */,
-				0E4CC4A3EA34C6BE7DCCF91D0D95C036 /* Macro */,
-				E4C7B2B2975C62642DC8C91F5FD7515C /* Others */,
-				0764730736809FC8EE90B3062E72F17F /* Pod */,
-				C17DD163326457A2E7C5F0F48CA2520C /* Support Files */,
-				42CCA576C600290C17F4863F082EC9D9 /* Thread */,
-				F7BCF552C9E5DB61B5D6DA4ADCA087CF /* UIKit */,
+				38DB8EC5DA38CF29F49D8B36A45397DD /* LCKit.modulemap */,
+				F9DFA54C451092CD733989DC06BA3C50 /* LCKit-dummy.m */,
+				56E99BF9F0C710CD6CDD985814797E7D /* LCKit-Info.plist */,
+				F7FAF5F72C70AEEF313A0FF6AC33B9BB /* LCKit-prefix.pch */,
+				AD0833F92EEBC4E7BB605A9AB7607F43 /* LCKit-umbrella.h */,
+				E862A2A562F1F865781AA3AD8DAAC61B /* LCKit.debug.xcconfig */,
+				23D7CE9559D13526776344DC5906F690 /* LCKit.release.xcconfig */,
 			);
-			name = LCKit;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LCKit";
+			sourceTree = "<group>";
+		};
+		6981FEB017DEB246D657AB769E2F9B33 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				3EF96EF7D3ADCDC2F6F2C0B0381ABD3E /* LCKitMacro.h */,
+			);
+			name = Macro;
+			path = LCKit/Classes/Macro;
+			sourceTree = "<group>";
+		};
+		815AB51383D47650BE1F5383CC6D1AD7 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				92AC9082445307DE98C2DC2E22F410E6 /* LCImageFactory.h */,
+				F22AF668FF5604136E0652E11E6F22DE /* LCImageFactory.m */,
+				348085CB02EEA3BACBE2AD2CB90F5B2A /* LCWeakProxy.h */,
+				9E51459BEA0A632171BF1693295C94E4 /* LCWeakProxy.m */,
+				BD2110642CB10727E1F88EC6943D0C90 /* NSInvocation+LCKit.h */,
+				0FCD37702D1B45142F95991896EB7E95 /* NSInvocation+LCKit.m */,
+			);
+			name = Others;
+			path = LCKit/Classes/Others;
+			sourceTree = "<group>";
+		};
+		BF0F82775884019497802CC9D5505D5B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E87B9B4AF836055E021D397F74AF7439 /* LCMultiDelegate.h */,
+				CE7F6E16D709165564BD93418A604783 /* LCMultiDelegate.m */,
+			);
+			name = Delegate;
+			path = LCKit/Classes/Delegate;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -212,20 +240,6 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		C17DD163326457A2E7C5F0F48CA2520C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE2A39065212BF6AF68FDEF979877909 /* LCKit.modulemap */,
-				C3EDE1BBFD3C0DBA3CBE1ADC35D013C0 /* LCKit.xcconfig */,
-				A1CB8B650F882037C69A8800A17EC8F1 /* LCKit-dummy.m */,
-				34944619CDF6F0BCF6D286B04CF11B8D /* LCKit-Info.plist */,
-				1485736A2AB67C713A80CEFF52A042BF /* LCKit-prefix.pch */,
-				AE0417F24D361E25CF5950C77701C4DE /* LCKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LCKit";
 			sourceTree = "<group>";
 		};
 		CD448130BD39E2AD6C3328FF96B4B5CD /* Pods-LCKit_Example */ = {
@@ -264,16 +278,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4C7B2B2975C62642DC8C91F5FD7515C /* Others */ = {
+		E0D7E2B96AB50B3842808636FA710EE8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4F50B564AEA338026A1F525D316EC61D /* LCWeakProxy.h */,
-				8CC840D6F5617E725C902D0E60A49E54 /* LCWeakProxy.m */,
-				B0587D4BE6EBF67487535CE68606A8DF /* NSInvocation+LCKit.h */,
-				821C006AAC6748C0AB774B93E5A85296 /* NSInvocation+LCKit.m */,
+				B675AF148E22006B9270EDD6BF66816F /* UIView+Frame.h */,
+				D78CD790DF4400A5F494BDC359730886 /* UIView+Frame.m */,
 			);
-			name = Others;
-			path = LCKit/Classes/Others;
+			name = UIKit;
+			path = LCKit/Classes/UIKit;
 			sourceTree = "<group>";
 		};
 		E60F5AE598594D0E4291065999DDC572 /* Targets Support Files */ = {
@@ -285,29 +297,42 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F7BCF552C9E5DB61B5D6DA4ADCA087CF /* UIKit */ = {
+		F0C881BD333C2F82163E894CCB05C61D /* LCKit */ = {
 			isa = PBXGroup;
 			children = (
-				3BA37B4593F36A592756DA54FDEAF3E9 /* UIView+Frame.h */,
-				C2BC3A302A3321599BCE0BD8CF51764D /* UIView+Frame.m */,
+				EBAE069EB4AD026A2A5CFF4704E8648C /* LCKit.h */,
+				BF0F82775884019497802CC9D5505D5B /* Delegate */,
+				6981FEB017DEB246D657AB769E2F9B33 /* Macro */,
+				815AB51383D47650BE1F5383CC6D1AD7 /* Others */,
+				45E639B33902BB20755F3B4871CECB98 /* Pod */,
+				655F00CF7581962FB570047FC1D2FFC1 /* Support Files */,
+				4A6C19525987E42ADEF674E5418B6749 /* Thread */,
+				E0D7E2B96AB50B3842808636FA710EE8 /* UIKit */,
 			);
-			name = UIKit;
-			path = LCKit/Classes/UIKit;
-			sourceTree = "<group>";
-		};
-		F7C8AA117A42C916BC89ABEDD4FE121F /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				705C27D28CF2BFE62D8073D2C5EBB287 /* LCMultiDelegate.h */,
-				952AE3CF8E295CBB7A967488CDF6683D /* LCMultiDelegate.m */,
-			);
-			name = Delegate;
-			path = LCKit/Classes/Delegate;
+			name = LCKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3262EB0308A0E226BE6985469AEAA1F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6F7D7E3A300B324B685E3B3020018A /* LCImageFactory.h in Headers */,
+				32F52F78A6B7359A116AE649150E9E14 /* LCInfiniteThread.h in Headers */,
+				B1D8E01DE19E5C46C107C7D3E4204926 /* LCKit-umbrella.h in Headers */,
+				72E7ACFE313524310B6C331A6DD6DA92 /* LCKit.h in Headers */,
+				8B3C5788540A6B90BCCF9F0E920B8CCC /* LCKitMacro.h in Headers */,
+				68F3D0387EB311C51A56E0B3E1542583 /* LCMultiDelegate.h in Headers */,
+				109173308EC0D1F55E812339B7C71FE6 /* LCThreadSafeArray.h in Headers */,
+				4573254EF4F05DC15D715FDB8AA0B4D3 /* LCWeakProxy.h in Headers */,
+				3F67A667714C4190418F5F1BBBD704F6 /* NSInvocation+LCKit.h in Headers */,
+				B9BB0BEC2EE653221D6D45EE6073039E /* UIView+Frame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		522692800E58806C1A9BB5C995B8DC5A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,22 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC210F4E66FC1F9D8327015D657538B /* Pods-LCKit_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A341E3C30F3E332547CB459BD524795B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F59D7BDD43ADCE03C918B4F736996CB /* LCInfiniteThread.h in Headers */,
-				10AD2595BB284A97B5E993D71EC9E8F1 /* LCKit-umbrella.h in Headers */,
-				613BA2B7A9CF124C34686E4266002745 /* LCKit.h in Headers */,
-				9991FDE24B6B647F0CD6E408AEF7A922 /* LCKitMacro.h in Headers */,
-				098BE1F15B86DF0684AD62A73965D088 /* LCMultiDelegate.h in Headers */,
-				F7791823AA0EA8DEB3563C8BF3870190 /* LCThreadSafeArray.h in Headers */,
-				9CA3B09F5E83751AD6D1F610117BEA7F /* LCWeakProxy.h in Headers */,
-				4E8237A05BBE6CC15D0B98749E99805A /* NSInvocation+LCKit.h in Headers */,
-				5BB4DA3137DFAA3D5AAA1F9C3277B17F /* UIView+Frame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +373,12 @@
 		};
 		81CCE5B108BC9011004C43F4FFCDBB26 /* LCKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A737FF3C2F45AE1979D9845390EDFC8B /* Build configuration list for PBXNativeTarget "LCKit" */;
+			buildConfigurationList = 977CB0DBA61B2320DE6C5D8228A7DF73 /* Build configuration list for PBXNativeTarget "LCKit" */;
 			buildPhases = (
-				A341E3C30F3E332547CB459BD524795B /* Headers */,
-				FB806955130F6600EF8A9F36F0795861 /* Sources */,
-				3846B64C8CE2947C1F668A0E7CA73D82 /* Frameworks */,
-				74184AFC858D13B7FD4DEAB5E49013EF /* Resources */,
+				3262EB0308A0E226BE6985469AEAA1F7 /* Headers */,
+				2403E94B08F1D026D11CA4CA46356F5F /* Sources */,
+				1E35ACD87317EDE3AF8C1482FF1BC973 /* Frameworks */,
+				AB003AA89086A9F18449517EEF6D594E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -429,14 +438,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74184AFC858D13B7FD4DEAB5E49013EF /* Resources */ = {
+		7706087B4D416892A6262F115BAA92D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7706087B4D416892A6262F115BAA92D6 /* Resources */ = {
+		AB003AA89086A9F18449517EEF6D594E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,25 +470,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2403E94B08F1D026D11CA4CA46356F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7C2851BC9EB510878D3F2D71C3013F /* LCImageFactory.m in Sources */,
+				22F747494D579A27816E482B9A12BF5C /* LCInfiniteThread.m in Sources */,
+				B93C63A9F7E4B00B72560AACD82287A8 /* LCKit-dummy.m in Sources */,
+				CBDB6C248A19930261A5D2129EABCCE0 /* LCMultiDelegate.m in Sources */,
+				DB26AE789BE62CE7BE64B2211AC4B982 /* LCThreadSafeArray.m in Sources */,
+				26F58F148741F0265CAD8F2D4A9CDE5B /* LCWeakProxy.m in Sources */,
+				05763CA9A03E2ADF696DA586676257B4 /* NSInvocation+LCKit.m in Sources */,
+				0BDDD5DB6670DCA25693B61A37E35309 /* UIView+Frame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62829332645CC3EB6AB29AC283558511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A2FE577F67E92168B6EC76433BB0483 /* Pods-LCKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB806955130F6600EF8A9F36F0795861 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C404FFBBC9ABEE141D122DBAFAC2F90 /* LCInfiniteThread.m in Sources */,
-				8063681E6AE3F461171E0A08006A9DD4 /* LCKit-dummy.m in Sources */,
-				C29A417D28CBEC51BE85E08225444292 /* LCMultiDelegate.m in Sources */,
-				A3249BCFA7250632319C002486481D7A /* LCThreadSafeArray.m in Sources */,
-				BA90F10D8251C1A7226C7B44ABF5745A /* LCWeakProxy.m in Sources */,
-				83C3C31EFA5EC748D28E58B68A34B711 /* NSInvocation+LCKit.m in Sources */,
-				C5101AE83297D27919C9661E3B0E8203 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +511,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6379D5A18273F4054144FC8CCAEBEEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D7CE9559D13526776344DC5906F690 /* LCKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LCKit/LCKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCKit/LCKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCKit/LCKit.modulemap";
+				PRODUCT_MODULE_NAME = LCKit;
+				PRODUCT_NAME = LCKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		76AC3F3CFA4E6EDF552FD505E190ED6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 252507E0B6D28DD5993551C618486CDC /* Pods-LCKit_Tests.release.xcconfig */;
@@ -759,9 +801,9 @@
 			};
 			name = Debug;
 		};
-		E423351DD466B46476468901AEA40DF1 /* Debug */ = {
+		E6BDB82D24C8A1737B5980795A43D187 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3EDE1BBFD3C0DBA3CBE1ADC35D013C0 /* LCKit.xcconfig */;
+			baseConfigurationReference = E862A2A562F1F865781AA3AD8DAAC61B /* LCKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -790,38 +832,6 @@
 			};
 			name = Debug;
 		};
-		E7D1BEC08B7D7E0E3C540304A5405BBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3EDE1BBFD3C0DBA3CBE1ADC35D013C0 /* LCKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LCKit/LCKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LCKit/LCKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LCKit/LCKit.modulemap";
-				PRODUCT_MODULE_NAME = LCKit;
-				PRODUCT_NAME = LCKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -834,11 +844,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A737FF3C2F45AE1979D9845390EDFC8B /* Build configuration list for PBXNativeTarget "LCKit" */ = {
+		977CB0DBA61B2320DE6C5D8228A7DF73 /* Build configuration list for PBXNativeTarget "LCKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E423351DD466B46476468901AEA40DF1 /* Debug */,
-				E7D1BEC08B7D7E0E3C540304A5405BBF /* Release */,
+				E6BDB82D24C8A1737B5980795A43D187 /* Debug */,
+				6379D5A18273F4054144FC8CCAEBEEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

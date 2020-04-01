@@ -13,6 +13,7 @@
 #import "LCMultiDelegate.h"
 #import "LCKit.h"
 #import "LCKitMacro.h"
+#import "LCImageFactory.h"
 #import "LCWeakProxy.h"
 #import "NSInvocation+LCKit.h"
 #import "LCInfiniteThread.h"

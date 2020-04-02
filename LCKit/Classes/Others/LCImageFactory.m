@@ -11,7 +11,7 @@
 @implementation LCImageFactory
 
 + (UIImage *)clipImageAsOval:(UIImage *)image ovalSize:(CGSize)size contentModel:(kLCImageContentMode)mode {
-    UIImage *clipedImage = [self clipImage:image size:size contentModel:mode coustomBlock:^(CGContextRef ctx) {
+    UIImage *clipedImage = [self clipImage:image size:size contentModel:mode opaque:NO coustomBlock:^(CGContextRef ctx) {
         // 裁剪成椭圆形
         CGContextAddEllipseInRect(ctx, CGRectMake(0.0, 0.0, size.width, size.height));
         CGContextClip(ctx);
@@ -28,7 +28,11 @@
     if (radius <= 0.0) {
         options = kLCImageClipRoundRectOptionNone;
     }
-    UIImage *clipedImage = [self clipImage:image size:size contentModel:mode coustomBlock:^(CGContextRef ctx) {
+    BOOL opaque = NO;
+    if (options == kLCImageClipRoundRectOptionNone) {
+        opaque = YES;
+    }
+    UIImage *clipedImage = [self clipImage:image size:size contentModel:mode opaque:opaque coustomBlock:^(CGContextRef ctx) {
         CGContextMoveToPoint(ctx, 0.0, radius);
         
         // 绘制左上角
@@ -79,13 +83,13 @@
 /**
  *  裁剪图片
  */
-+ (UIImage *)clipImage:(UIImage *)image size:(CGSize)size contentModel:(kLCImageContentMode)mode coustomBlock:(void (^)(CGContextRef ctx))block {
++ (UIImage *)clipImage:(UIImage *)image size:(CGSize)size contentModel:(kLCImageContentMode)mode opaque:(BOOL)opaque coustomBlock:(void (^)(CGContextRef ctx))block {
     CGSize imageSize = CGSizeMake(image.size.width * image.scale, image.size.height * image.scale);
     CGRect drawRect = [self drawRectWithSourceSize:imageSize targetSize:size contentModel:mode];
     UIImage *clipedImage = nil;
     
     // 绘制图片
-    UIGraphicsBeginImageContextWithOptions(size, YES, 1.0);
+    UIGraphicsBeginImageContextWithOptions(size, opaque, 1.0);
     
     // 调用自定义的裁剪方法
     CGContextRef ctx = UIGraphicsGetCurrentContext();

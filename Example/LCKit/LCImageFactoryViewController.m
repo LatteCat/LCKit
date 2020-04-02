@@ -41,23 +41,23 @@
         NSAssert(NO, @"参数错误！");
     }
     
-    // 直角矩形
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        UIImage *clipedImage = [LCImageFactory clipImageAsRect:self.srcImage rectSize:CGSizeMake(width, height) contentModel:self.mode];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.imageView.image = clipedImage;
-            self.infoLabel.text = [NSString stringWithFormat:@"图片大小：{%0.f, %0.f}", clipedImage.size.width, clipedImage.size.height];
-        });
-    });
-    
-//    // 圆角矩形
+//    // 直角矩形
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-//        UIImage *clipedImage = [LCImageFactory clipImageAsRoundRect:self.srcImage rectSize:CGSizeMake(width, height) roundRadius:radius roundRectOptions:kLCImageClipRoundRectOptionLeft contentModel:self.mode];
+//        UIImage *clipedImage = [LCImageFactory clipImageAsRect:self.srcImage rectSize:CGSizeMake(width, height) contentModel:self.mode];
 //        dispatch_async(dispatch_get_main_queue(), ^{
 //            self.imageView.image = clipedImage;
 //            self.infoLabel.text = [NSString stringWithFormat:@"图片大小：{%0.f, %0.f}", clipedImage.size.width, clipedImage.size.height];
 //        });
 //    });
+    
+    // 圆角矩形
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        UIImage *clipedImage = [LCImageFactory clipImageAsRoundRect:self.srcImage rectSize:CGSizeMake(width, height) roundRadius:radius roundRectOptions:kLCImageClipRoundRectOptionTop | kLCImageClipRoundRectOptionBottomLeft contentModel:self.mode];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.imageView.image = clipedImage;
+            self.infoLabel.text = [NSString stringWithFormat:@"图片大小：{%0.f, %0.f}", clipedImage.size.width, clipedImage.size.height];
+        });
+    });
     
 //    // 圆
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
